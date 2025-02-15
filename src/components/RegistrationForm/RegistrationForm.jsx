@@ -3,7 +3,7 @@ import * as Yup from "yup";
 import { useDispatch } from "react-redux";
 import { register } from "../../redux/auth/operations";
 import styles from "./RegistrationForm.module.css";
-import { Link } from "react-router-dom"; // импорт для создания ссылки
+import { Link } from "react-router-dom";
 
 const validationSchema = Yup.object({
   name: Yup.string().required("Required"),

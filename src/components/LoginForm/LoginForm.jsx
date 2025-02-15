@@ -3,7 +3,7 @@ import * as Yup from "yup";
 import { useDispatch } from "react-redux";
 import { logIn } from "../../redux/auth/operations";
 import styles from "./LoginForm.module.css";
-import { Link } from "react-router-dom"; // импорт для создания ссылки
+import { Link } from "react-router-dom";
 
 const validationSchema = Yup.object({
   email: Yup.string().email("Invalid email").required("Required"),
@@ -43,7 +43,6 @@ function LoginForm() {
           Log In
         </button>
 
-        {/* Ссылка на страницу регистрации */}
         <div className={styles.signUpLink}>
           No account yet? <Link to="/register">Sign up here</Link>
         </div>
